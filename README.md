@@ -19,7 +19,7 @@
 `     -H "Authorization: token ACTIONS_TRIGGER_TOKEN" \`  
 `     --data '{"event_type": "TRIGGER_KEYWORDS"}'`  
 需要要替换的值：  
-`:owner`- 用户名  
+`:owner`- 用户名，
 `:repo` - 需要触发的 Github Action 所在的仓库名称  
 `ACTIONS_TRIGGER_TOKEN` - 带有 repo 权限的 Personal access token  
 `TRIGGER_KEYWORDS` - 自定义 `Webhook` 事件名称，可以为任意值，Actions 列表中会显示此名称。  
