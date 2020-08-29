@@ -17,3 +17,5 @@ sed -i '$a src-git lienol https://github.com/Lancenas/lienol-openwrt-package.git
 #Clone source code and add packages
 git clone https://github.com/tty228/luci-app-serverchan package/myapp/luci-app-serverchan
 git clone https://github.com/liwenjie119/luci-app-koolproxyR package/myapp/luci-app-koolproxyR
+git clone https://github.com/vernesong/OpenClash package/myapp/luci-app-openclash
+git clone https://github.com/frainzy1477/luci-app-clash package/myapp/luci-app-clash
