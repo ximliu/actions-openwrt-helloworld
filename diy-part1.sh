@@ -9,11 +9,15 @@
 #=============================================================
 
 # fw876/helloworld
-sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+git clone https://github.com/kenzok8/openwrt-packages package/openwrt-packages
 
 # Lienol/openwrt-package
-sed -i '$a src-git lienol https://github.com/Lancenas/lienol-openwrt-package.git' feeds.conf.default
 rm -rf package/openwrt-packages/luci-app-passwall && svn co https://github.com/xiaorouji/openwrt-package/trunk/lienol/luci-app-passwall package/openwrt-packages/luci-app-passwall
+rm -rf package/openwrt-packages/luci-app-ssr-plus && svn co https://github.com/fw876/helloworld package/openwrt-packages/helloworld
+
+# 添加passwall依赖库
+# git clone https://github.com/kenzok8/small package/small
+svn co https://github.com/xiaorouji/openwrt-package/trunk/package package/small
 
 #Clone source code and add packages
 git clone https://github.com/tty228/luci-app-serverchan package/myapp/luci-app-serverchan
